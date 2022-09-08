@@ -12,6 +12,7 @@
         {
           "id": "company_url",
           "type": "url",
+          "mandatory": false,
           "label": "Custom company URL"
         },
         {
@@ -28,13 +29,14 @@
         {
           "id": "app_name",
           "type": "text",
+          "mandatory": false,
           "label": "Custom app name"
         },
         {
           "id": "app_subname",
           "type": "text",
-          "label": "Custom app subname",
-          "mandatory": false
+          "mandatory": false,
+          "label": "Custom app subname"
         }
       ]
     },
@@ -75,10 +77,10 @@
         },
         {
           "id": "default_domains",
-          "label": "Indicates whether user uses default domains",
           "type": "boolean",
           "mandatory": true,
-          "default": true
+          "default": true,
+          "label": "Indicates whether user uses default domains"
         }
       ]
     },
@@ -109,8 +111,8 @@
         {
           "id": "portabilling_account_url",
           "type": "url",
-          "label": "URL to access PortaSwitch API account realm",
-          "mandatory": true
+          "mandatory": true,
+          "label": "URL to access PortaSwitch API account realm"
         },
         {
           "id": "portasip_host_port",
@@ -147,9 +149,9 @@
         {
           "id": "ios_password",
           "type": "text",
+          "mandatory": false,
           "label": "Certificate password",
-          "info": "Default as empty string.",
-          "mandatory": false
+          "info": "Default as empty string."
         },
         {
           "id": "ios_key_id",
