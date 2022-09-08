@@ -120,6 +120,19 @@
           "mandatory": true,
           "label": "SIP address",
           "info": "Provide hostname and port, such as sipdomain.com:5060"
+        },
+        {
+          "id": "demo_behaviour_i_customer",
+          "type": "integer",
+          "mandatory": false,
+          "label": "The ID of the customer record to with demo accounts"
+        },
+        {
+          "id": "demo_behaviour_i_custom_field",
+          "type": "integer",
+          "mandatory": false,
+          "label": "The ID of the custom field of a demo account's activated state",
+          "info": "The custom field must be number type with 0 default value."
         }
       ]
     },
