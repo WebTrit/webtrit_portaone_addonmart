@@ -1,0 +1,171 @@
+{
+  "groups": [
+    {
+      "name": "Company info",
+      "settings": [
+        {
+          "id": "company_name",
+          "type": "text",
+          "mandatory": true,
+          "label": "Custom company name"
+        },
+        {
+          "id": "company_url",
+          "type": "url",
+          "label": "Custom company URL"
+        },
+        {
+          "id": "company_logo",
+          "type": "file",
+          "mandatory": false,
+          "label": "Custom company logo"
+        }
+      ]
+    },
+    {
+      "name": "App info",
+      "settings": [
+        {
+          "id": "app_name",
+          "type": "text",
+          "label": "Custom app name"
+        },
+        {
+          "id": "app_subname",
+          "type": "text",
+          "label": "Custom app subname",
+          "mandatory": false
+        }
+      ]
+    },
+    {
+      "name": "Domains & Certificates",
+      "settings": [
+        {
+          "id": "core_domain",
+          "type": "text",
+          "mandatory": true,
+          "label": "Core domain"
+        },
+        {
+          "id": "dialer_domain",
+          "type": "text",
+          "mandatory": true,
+          "label": "Dialer domain"
+        },
+        {
+          "id": "wildcard_ssl_cert",
+          "type": "file",
+          "mandatory": false,
+          "label": "Wildcard or composed for tree domains SSL Certificate",
+          "info": "Upload your certificate file"
+        },
+        {
+          "id": "wildcard_ssl_cert_key",
+          "type": "file",
+          "mandatory": false,
+          "label": "Wildcard or composed for tree domains SSL Certificate Key",
+          "info": "Upload your certificate file"
+        },
+        {
+          "id": "ssl_cert_auto",
+          "type": "boolean",
+          "mandatory": false,
+          "label": "Generate certificates with Let's encrypt service"
+        },
+        {
+          "id": "default_domains",
+          "label": "Indicates whether user uses default domains",
+          "type": "boolean",
+          "mandatory": true,
+          "default": true
+        }
+      ]
+    },
+    {
+      "name": "External services (PortaSwitch)",
+      "settings": [
+        {
+          "id": "portabilling_administrator_url",
+          "type": "url",
+          "mandatory": true,
+          "label": "URL to access PortaSwitch API administrator realm",
+          "info": "Provide hostname and port, such as https://mypb.com:5000/rest"
+        },
+        {
+          "id": "portabilling_administrator_login",
+          "type": "text",
+          "mandatory": true,
+          "label": "Login to access PortaSwitch API administrator realm",
+          "info": "Provide hostname and port, such as https://mypb.com:5000/rest"
+        },
+        {
+          "id": "portabilling_administrator_token",
+          "type": "text",
+          "mandatory": true,
+          "label": "Token to access PortaSwitch API administrator realm",
+          "info": "Provide hostname and port, such as https://mypb.com:5000/rest"
+        },
+        {
+          "id": "portabilling_account_url",
+          "type": "url",
+          "label": "URL to access PortaSwitch API account realm",
+          "mandatory": true
+        },
+        {
+          "id": "portasip_host_port",
+          "type": "text",
+          "mandatory": true,
+          "label": "SIP address",
+          "info": "Provide hostname and port, such as sipdomain.com:5060"
+        }
+      ]
+    },
+    {
+      "name": "Push services credentials",
+      "settings": [
+        {
+          "id": "android_apikey",
+          "type": "text",
+          "mandatory": true,
+          "label": "Android API Key"
+        },
+        {
+          "id": "ios_key_base64",
+          "type": "file",
+          "mandatory": false,
+          "label": "Apple APNs Authentication Key",
+          "info": "Upload your certificate file"
+        },
+        {
+          "id": "ios_key_type",
+          "type": "text",
+          "mandatory": true,
+          "label": "Apple APNs Authentication Key type",
+          "info": "Could be pem, p12 or p8 type."
+        },
+        {
+          "id": "ios_password",
+          "type": "text",
+          "label": "Certificate password",
+          "info": "Default as empty string.",
+          "mandatory": false
+        },
+        {
+          "id": "ios_key_id",
+          "type": "text",
+          "mandatory": true,
+          "label": "KeyID from developer account",
+          "info": "Certificates, Identifiers & Profiles -> Keys"
+        },
+        {
+          "id": "ios_team_id",
+          "type": "text",
+          "mandatory": true,
+          "label": "TeamID from developer account",
+          "info": "View Account -> Membership"
+        }
+      ]
+    }
+  ]
+}
