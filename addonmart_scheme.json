@@ -92,27 +92,26 @@
           "type": "url",
           "mandatory": true,
           "label": "URL to access PortaSwitch API administrator realm",
-          "info": "Provide hostname and port, such as https://mypb.com:5000/rest"
+          "info": "Provide URL, such as https://put-your-porta-billing-host.com/rest"
         },
         {
           "id": "portabilling_administrator_login",
           "type": "text",
           "mandatory": true,
-          "label": "Login to access PortaSwitch API administrator realm",
-          "info": "Provide hostname and port, such as https://mypb.com:5000/rest"
+          "label": "Login to access PortaSwitch API administrator realm"
         },
         {
           "id": "portabilling_administrator_token",
           "type": "text",
           "mandatory": true,
-          "label": "Token to access PortaSwitch API administrator realm",
-          "info": "Provide hostname and port, such as https://mypb.com:5000/rest"
+          "label": "Token to access PortaSwitch API administrator realm"
         },
         {
           "id": "portabilling_account_url",
           "type": "url",
           "mandatory": true,
-          "label": "URL to access PortaSwitch API account realm"
+          "label": "URL to access PortaSwitch API account realm",
+          "info": "Provide URL, such as https://put-your-porta-billing-host.com:8445/rest"
         },
         {
           "id": "portasip_host_port",
