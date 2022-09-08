@@ -125,14 +125,40 @@
           "id": "demo_behaviour_i_customer",
           "type": "integer",
           "mandatory": false,
-          "label": "The ID of the customer record to with demo accounts"
+          "label": "The ID of the customer record to with demo accounts",
+          "note": {
+            "relation": [
+              "demo_behaviour_i_custom_field"
+            ],
+            "dockerContainerEnvMapping": {
+              "webtrit_core": {
+                "envName": "DEMO_BEHAVIOUR_I_CUSTOMER",
+                "note": "current paramater value"
+              },
+              "webtrit_dialer": {
+                "envName": "VUE_APP_DEMO_BEHAVIOUR",
+                "note": "`true` or `enable` if current paramater provided"
+              }
+            }
+          }
         },
         {
           "id": "demo_behaviour_i_custom_field",
           "type": "integer",
           "mandatory": false,
           "label": "The ID of the custom field of a demo account's activated state",
-          "info": "The custom field must be number type with 0 default value."
+          "info": "The custom field must be number type with 0 default value.",
+          "note": {
+            "relation": [
+              "demo_behaviour_i_customer"
+            ],
+            "dockerContainerEnvMapping": {
+              "webtrit_core": {
+                "envName": "DEMO_BEHAVIOUR_I_CUSTOM_FIELD",
+                "note": "current paramater value"
+              }
+            }
+          }
         }
       ]
     },
